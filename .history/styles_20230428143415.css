@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* TAKE IT FURTHER - explore https://fonts.google.com/ and get and import statement for a font of your choosing then change the font-family for the h1 (above STEP 5) */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+html {
+    /* STEP 3: Choose a color for the background (enter values from 0 - 255) */
+    background-color: rgb(51, 63, 72);
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    margin: 0 auto;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 700;
+    font-size: 13rem;
+    z-index: 4;
+/* STEP 5: Explore the text-shadow property by changing the colo values and pixel values */
+    text-shadow: 5px 5px 0px rgb(119, 197, 213), 
+    /* The first value is the horizontal shadow, next is the vertical shadow, these two values can be positive or negative numbers. The third number is  the blur radius of the shadow */
+    10px 10px 0px rgb(0, 119, 139), 
+    15px 15px 0px  rgb(100, 167, 11), 
+    20px 20px 0px rgb(199, 214, 213), 
+    25px 25px 0px rgb(229, 114, 0), 
+    30px 30px 0px rgb(243, 208, 62);
+
+/* STEP 4: Choose a color for your h1 text (enter values from 0 - 255) */
+    color: rgb(255, 255, 255);
+}
+
+div {
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.small {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color:rgb(119, 197, 213);
+}
+
+
+.medium {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    background-color: rgb(100, 167, 11); 
+}
+
+.large {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: rgb(0, 75, 135);
+}
+
+
+/* STEP 6: Let's apply the "rainbow" animation to all the circles at once */
+/* uncomment line 70, line 84 and the odd numbered lines in between */
+div .circle { 
+    /* animation-name: ;  */
+    /* in milliseconds or seconds */
+    /* animation-duration: ;  */
+    /* ease-in, ease-out, ease-in-out, linear*/
+    /* animation-timing-function: ;  */
+    /* in milliseconds or seconds */
+    /* animation-delay:  ;  */
+    /* infinite or a positive number */
+    /* animation-iteration-count: ;  */
+    /* normal, reverse, alternate, alternate-reverse */
+    /* animation-direction: ;  */
+    /* none, forwards, backwards, both */
+    /* animation-fill-mode: ;  */
+/* }  */
+
+/* STEP 7: Let's apply animations to each size of circle */
+
+/* uncomment line 88, line 102 and the odd numbered lines in between */
+/* .small { */
+/* animation-name: ;   */
+/* in milliseconds or seconds */
+/* animation-duration: ; */
+/* ease-in, ease-out, ease-in-out, linear*/
+/* animation-timing-function: ;  */
+/* in milliseconds or seconds */
+/* animation-delay:  ; */
+/* infinite or a positive number */
+/* animation-iteration-count:  ;  */
+/* normal, reverse, alternate, alternate-reverse */
+/* animation-direction: ;  */
+/* none, forwards, backwards, both */
+/* animation-fill-mode: ;  */
+/* }   */
+
+/* uncomment line 106, line 120 and the odd numbered lines in between */
+/* .medium .circle { */
+    /* animation-name: ;   */
+    /* in milliseconds or seconds */
+    /* animation-duration: ; */
+    /* ease-in, ease-out, ease-in-out, linear*/
+    /* animation-timing-function: ;  */
+    /* in milliseconds or seconds */
+    /* animation-delay:  ; */
+    /* infinite or a positive number */
+    /* animation-iteration-count: ;  */
+    /* normal, reverse, alternate, alternate-reverse */
+    /* animation-direction: ;  */
+    /* none, forwards, backwards, both */
+    /* animation-fill-mode: ;  */
+/* }  */
+
+
+/* uncomment line 124 line 138 and the odd numbered lines in between */
+/* .large .circle { */
+    /* animation-name: ;   */
+    /* in milliseconds or seconds */
+    /* animation-duration: ; */
+    /* ease-in, ease-out, ease-in-out, linear*/
+    /* animation-timing-function: ;  */
+    /* in milliseconds or seconds */
+    /* animation-delay:  ; */
+    /* infinite or a positive number */
+    /* animation-iteration-count: ;  */
+    /* normal, reverse, alternate, alternate-reverse */
+    /* animation-direction: ;  */
+    /* none, forwards, backwards, both */
+    /* animation-fill-mode: ;  */
+/* }  */
+
+
+/***** ANIMATIONS *****/
+
+@keyframes rainbow {
+    0% {
+        background-color: rgb(255, 0, 0);
+    }
+    20% {
+        background-color: rgb(255, 165, 0);
+    }
+    35% {
+        background-color: rgb(255, 255, 0);
+    }
+    50% {
+        background-color: rgb(0, 128, 0);
+    }
+    65% {
+        background-color:rgb(0, 0, 255);
+    }
+    80% {
+        background-color: rgb(75, 0, 130);
+    }
+    100% {
+        background-color: rgb(238, 130, 238);
+    }
+    
+}
+
+
+@keyframes cloud {
+    0% {
+        background-color: rgb(227, 224, 236);
+    }
+    25% {
+        background-color: rgb(250, 242, 239);
+    }
+    50% {
+        background-color: rgb(163, 232, 253);
+    }
+    100% {
+        transform: rotateY(360deg);
+        background-color: rgb(38, 198, 248);
+    }
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        background-color: rgb(255, 255, 0);
+    }
+    
+}
+

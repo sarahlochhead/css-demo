@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 5rem;
+    margin: 0 auto;
+}
+
+svg .small {
+    height: 100;
+    width: 100;
+    cx: 50;
+    cy: 50;
+    r: 40;
+    stroke: black;
+    stroke-width: 3;
+    fill: red;
+}

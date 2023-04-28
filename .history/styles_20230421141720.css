@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+    di
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 5rem;
+}
+
+.circle-lg {
+    border-radius: 100%;
+    background-color: rgb(0, 255, 255);
+    height: 250px;
+    width: 250px;
+}
+
+.circle-md {
+    border-radius: 100%;
+    background-color: rgb(255, 0, 251);
+    height: 150px;
+    width: 150px;
+}
+.circle-sm {
+    border-radius: 100%;
+    background-color: rgb(153, 0, 255);
+    height: 50px;
+    width: 50px;
+}

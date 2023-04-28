@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    margin: 0 auto;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 700;
+    font-size: 13rem;
+    text-shadow: -15px 5px 20px rgb(206, 208, 211);
+/* STEP 3: Choose a color for your h1 text (enter values from 0 - 255) */
+    color:rgb(224, 19, 224);
+}
+
+div {
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+
+.small {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color: rgb(152, 146, 242); 
+}
+
+.medium {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    background-color: rgb(73, 62, 230); 
+}
+
+.large {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: rgb(19, 14, 100); 
+}

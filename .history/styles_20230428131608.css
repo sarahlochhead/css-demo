@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+html {
+    /* STEP 3: Choose a color for the background (enter values from 0 - 255) */
+    background-color: rgb(51, 63, 72);
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    margin: 0 auto;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 700;
+    font-size: 13rem;
+    /* STEP 5: Explore the text-shadow by changing the colo values and  */
+    text-shadow: 5px 5px 0px rgb(119, 197, 213), 
+    10px 10px 0px rgb(0, 119, 139), 
+    15px 15px 0px  rgb(100, 167, 11), 
+    20px 20px 0px rgb(199, 214, 213), 
+    25px 25px 0px rgb(229, 114, 0), 
+    30px 30px 0px rgb(243, 208, 62);
+/* STEP 4: Choose a color for your h1 text (enter values from 0 - 255) */
+    color: rgb(255, 255, 255);
+}
+
+div {
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+
+.small {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color:rgb(119, 197, 213);
+}
+
+.medium {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    background-color: rgb(100, 167, 11); 
+}
+
+.large {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: rgb(0, 75, 135);
+}
